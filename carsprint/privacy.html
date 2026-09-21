@@ -1,0 +1,380 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>CarSprint Privacy Policy</title>
+<style>
+  :root {
+    --sky-top: #6EC6FF;
+    --sky-bottom: #2F86F0;
+    --navy: #13214A;
+    --navy-lighter: #24356E;
+    --gold: #FFC93C;
+    --gold-dark: #C98A12;
+    --green: #2FAE5E;
+    --blue: #3B82F6;
+    --text-primary: #0F1830;
+    --text-secondary: #4A567C;
+    --card-bg: #FFFFFF;
+    --page-bg: #EEF3FC;
+    --border: #D8E1F5;
+    --code-bg: #F1F4FC;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --navy: #0B1330;
+      --navy-lighter: #1B2A56;
+      --text-primary: #EDF1FF;
+      --text-secondary: #A9B4D6;
+      --card-bg: #101A38;
+      --page-bg: #070C1E;
+      --border: #223058;
+      --code-bg: #0C1530;
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--page-bg);
+    color: var(--text-primary);
+    font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    line-height: 1.6;
+    padding-inline: 16px;
+  }
+  .hero {
+    background: linear-gradient(180deg, var(--sky-top), var(--sky-bottom));
+    margin-inline: -16px;
+    padding: 40px 16px 56px;
+    color: #FFFFFF;
+    position: relative;
+    overflow: hidden;
+  }
+  .hero::after {
+    content: "";
+    position: absolute;
+    left: 0; right: 0; bottom: 0;
+    height: 18px;
+    background: repeating-linear-gradient(-45deg, #FFC93C 0 22px, #13214A 22px 44px);
+    opacity: 0.9;
+  }
+  .hero-inner { max-width: 720px; margin: 0 auto; }
+  .eyebrow {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    font-family: "Baloo 2", "Inter", sans-serif;
+    font-weight: 700;
+    font-size: 13px;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    background: rgba(19, 33, 74, 0.35);
+    border: 1px solid rgba(255, 255, 255, 0.35);
+    padding: 6px 14px;
+    border-radius: 999px;
+  }
+  h1 {
+    font-family: "Baloo 2", "Inter", sans-serif;
+    font-size: clamp(28px, 5vw, 40px);
+    font-weight: 800;
+    letter-spacing: 0.01em;
+    margin: 18px 0 8px;
+    text-shadow: 0 2px 8px rgba(15, 24, 48, 0.25);
+  }
+  .hero p { max-width: 60ch; color: rgba(255, 255, 255, 0.92); margin: 0 0 4px; }
+  .hero .meta { font-size: 13px; color: rgba(255, 255, 255, 0.75); margin-top: 14px; }
+  main { max-width: 720px; margin: 0 auto; padding-bottom: 64px; }
+  .notice {
+    margin-top: -30px;
+    background: var(--card-bg);
+    border: 1px solid var(--border);
+    border-left: 4px solid var(--gold-dark);
+    border-radius: 12px;
+    padding: 16px 18px;
+    box-shadow: 0 8px 24px rgba(15, 24, 48, 0.12);
+    font-size: 14px;
+    color: var(--text-secondary);
+    position: relative;
+    z-index: 1;
+  }
+  .notice strong { color: var(--text-primary); }
+  nav.toc {
+    background: var(--card-bg);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 18px 20px;
+    margin-top: 20px;
+  }
+  nav.toc h2 {
+    font-family: "Baloo 2", "Inter", sans-serif;
+    font-size: 13px;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: var(--text-secondary);
+    margin: 0 0 10px;
+  }
+  nav.toc ol { margin: 0; padding-left: 20px; columns: 2; gap: 24px; font-size: 14px; }
+  nav.toc li { margin-bottom: 6px; break-inside: avoid; }
+  nav.toc a { color: var(--blue); text-decoration: none; font-weight: 600; }
+  nav.toc a:hover { text-decoration: underline; }
+  section {
+    background: var(--card-bg);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 26px 24px;
+    margin-top: 18px;
+    scroll-margin-top: 16px;
+  }
+  .section-head { display: flex; align-items: center; gap: 12px; margin-bottom: 12px; }
+  .badge {
+    flex: none;
+    width: 30px;
+    height: 30px;
+    border-radius: 9px;
+    background: var(--navy);
+    color: var(--gold);
+    font-family: "Baloo 2", "Inter", sans-serif;
+    font-weight: 800;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  h2 { font-family: "Baloo 2", "Inter", sans-serif; font-size: 19px; font-weight: 700; margin: 0; }
+  p { color: var(--text-secondary); margin: 0 0 12px; }
+  p:last-child { margin-bottom: 0; }
+  a { color: var(--blue); }
+  table { width: 100%; border-collapse: collapse; font-size: 13.5px; margin: 10px 0 4px; }
+  th, td {
+    text-align: left;
+    padding: 10px 12px;
+    border-bottom: 1px solid var(--border);
+    vertical-align: top;
+    color: var(--text-secondary);
+  }
+  th {
+    color: var(--text-primary);
+    font-family: "Baloo 2", "Inter", sans-serif;
+    font-weight: 700;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+  }
+  tr:last-child td { border-bottom: none; }
+  .cards { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin-top: 10px; }
+  @media (max-width: 520px) {
+    .cards { grid-template-columns: 1fr; }
+    nav.toc ol { columns: 1; }
+  }
+  .service-card { border: 1px solid var(--border); background: var(--code-bg); border-radius: 10px; padding: 14px 16px; }
+  .service-card h4 { margin: 0 0 4px; font-size: 14px; display: flex; align-items: center; gap: 8px; }
+  .dot { width: 8px; height: 8px; border-radius: 50%; flex: none; }
+  .dot.gold { background: var(--gold-dark); }
+  .dot.blue { background: var(--blue); }
+  .service-card p { font-size: 13px; margin: 0 0 8px; }
+  .service-card a { font-size: 13px; font-weight: 600; }
+  ul.tick { list-style: none; padding: 0; margin: 10px 0 0; }
+  ul.tick li {
+    display: flex;
+    gap: 10px;
+    padding: 8px 0;
+    border-bottom: 1px solid var(--border);
+    color: var(--text-secondary);
+    font-size: 14px;
+  }
+  ul.tick li:last-child { border-bottom: none; }
+  ul.tick li::before { content: "\2713"; color: var(--green); font-weight: 800; flex: none; }
+  .local-box {
+    background: linear-gradient(135deg, var(--navy), var(--navy-lighter));
+    color: #EAF0FF;
+    border-radius: 10px;
+    padding: 16px 18px;
+    margin-top: 10px;
+  }
+  .local-box p { color: rgba(234, 240, 255, 0.85); }
+  .local-box strong { color: var(--gold); }
+  footer { max-width: 720px; margin: 24px auto 0; padding-bottom: 32px; text-align: center; font-size: 12.5px; color: var(--text-secondary); }
+</style>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<div class="hero">
+  <div class="hero-inner">
+    <span class="eyebrow">🏁 CarSprint</span>
+    <h1>Privacy Policy</h1>
+    <p>This page explains what information CarSprint collects, why, and the
+    choices you have — in plain language, not legal boilerplate.</p>
+    <p class="meta">Last updated: September 18, 2026 · Applies to the CarSprint Android app</p>
+  </div>
+</div>
+
+<main>
+  <div class="notice">
+    <strong>Starting-point template, not legal advice.</strong> This policy
+    was drafted to accurately describe what CarSprint's code and the
+    third-party SDKs it includes (Google AdMob, Firebase) are built to do.
+    Before relying on it for a live Play Store listing, have it reviewed —
+    requirements vary by region (e.g. GDPR, CCPA) and this isn't a
+    substitute for legal counsel.
+  </div>
+
+  <nav class="toc" aria-label="Table of contents">
+    <h2>On this page</h2>
+    <ol>
+      <li><a href="#overview">1. Overview</a></li>
+      <li><a href="#collect">2. Information we collect</a></li>
+      <li><a href="#local">3. Stored only on your device</a></li>
+      <li><a href="#use">4. How we use information</a></li>
+      <li><a href="#third-party">5. Third-party services</a></li>
+      <li><a href="#choices">6. Your choices</a></li>
+      <li><a href="#children">7. Children's privacy</a></li>
+      <li><a href="#retention">8. Data retention &amp; security</a></li>
+      <li><a href="#changes">9. Changes to this policy</a></li>
+      <li><a href="#contact">10. Contact us</a></li>
+    </ol>
+  </nav>
+
+  <section id="overview">
+    <div class="section-head"><span class="badge">1</span><h2>Overview</h2></div>
+    <p>CarSprint is a free, ad-supported endless driving game published by
+    Trisoftic. Like most free mobile games, it uses ads to stay free and
+    basic analytics to understand how the game is used. This policy covers
+    everything the app and its bundled third-party SDKs are capable of
+    collecting — regardless of whether every feature described here is
+    actively turned on in a given build (see the notes in each section).</p>
+  </section>
+
+  <section id="collect">
+    <div class="section-head"><span class="badge">2</span><h2>Information we collect</h2></div>
+    <p>CarSprint itself never asks you to create an account, log in, or type
+    in personal information. The data below comes from the third-party SDKs
+    the app includes, not from anything you enter.</p>
+    <table>
+      <thead>
+        <tr><th>Category</th><th>What it is</th><th>Collected via</th></tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Device &amp; ad identifiers</td>
+          <td>Advertising ID, device/network type, approximate (IP-based)
+          location, ad interaction events</td>
+          <td>Google AdMob (banner, interstitial &amp; rewarded ads)</td>
+        </tr>
+        <tr>
+          <td>Usage &amp; performance data</td>
+          <td>Screens viewed, session length, app crashes/errors, general
+          gameplay events (e.g. game started, game over)</td>
+          <td>Firebase Analytics &amp; Crashlytics</td>
+        </tr>
+        <tr>
+          <td>Remote configuration</td>
+          <td>No personal data — just which app config values (difficulty
+          tuning, feature flags) your device has fetched</td>
+          <td>Firebase Remote Config</td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+
+  <section id="local">
+    <div class="section-head"><span class="badge">3</span><h2>Stored only on your device</h2></div>
+    <p>Your gameplay progress lives entirely on your device via Android's
+    local app storage — it is never uploaded to us or anyone else.</p>
+    <div class="local-box">
+      <p><strong>Never transmitted anywhere:</strong> high score &amp; your
+      local top-5 leaderboard, total coins collected, your selected car,
+      sound/music/vibration settings, and your randomly-generated in-game
+      display name.</p>
+    </div>
+    <p style="margin-top:10px">Uninstalling the app, or clearing its storage
+    in Android's App Info settings, permanently deletes this data.</p>
+  </section>
+
+  <section id="use">
+    <div class="section-head"><span class="badge">4</span><h2>How we use information</h2></div>
+    <ul class="tick">
+      <li>To show ads (including, if you haven't opted out, ads relevant to
+      your interests) and measure ad performance</li>
+      <li>To understand which parts of the game people actually play, so we
+      can fix bugs and improve it</li>
+      <li>To diagnose crashes and technical problems</li>
+      <li>To adjust difficulty and feature availability remotely without
+      needing a new app update</li>
+    </ul>
+    <p style="margin-top:12px">We do not sell your information, and we don't
+    build advertising profiles beyond what Google's AdMob/Firebase SDKs do
+    on our behalf under their own policies (linked below).</p>
+  </section>
+
+  <section id="third-party">
+    <div class="section-head"><span class="badge">5</span><h2>Third-party services</h2></div>
+    <p>CarSprint uses these Google services. Each links to its own privacy
+    documentation, which governs how Google itself handles the data.</p>
+    <div class="cards">
+      <div class="service-card">
+        <h4><span class="dot gold"></span>Google AdMob</h4>
+        <p>Serves banner, interstitial &amp; rewarded video ads.</p>
+        <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google Privacy Policy →</a>
+      </div>
+      <div class="service-card">
+        <h4><span class="dot blue"></span>Firebase (Google)</h4>
+        <p>Analytics, Crashlytics &amp; Remote Config.</p>
+        <a href="https://firebase.google.com/support/privacy" target="_blank" rel="noopener">Firebase Privacy →</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="choices">
+    <div class="section-head"><span class="badge">6</span><h2>Your choices</h2></div>
+    <ul class="tick">
+      <li>Opt out of personalized ads: Android Settings → Google → Ads →
+      "Opt out of Ads Personalization"</li>
+      <li>Reset your advertising ID from the same screen at any time</li>
+      <li>Uninstall the app to remove all locally stored game data
+      immediately</li>
+      <li>Limit ad tracking further via your device's general privacy
+      settings, which AdMob respects</li>
+    </ul>
+  </section>
+
+  <section id="children">
+    <div class="section-head"><span class="badge">7</span><h2>Children's privacy</h2></div>
+    <p>CarSprint is not directed at children under 13, and we don't
+    knowingly collect personal information from them. If you believe a
+    child has provided us information through the app, contact us below and
+    we'll address it.</p>
+  </section>
+
+  <section id="retention">
+    <div class="section-head"><span class="badge">8</span><h2>Data retention &amp; security</h2></div>
+    <p>Data collected by AdMob/Firebase is retained per Google's own
+    retention policies (see their links above), not a schedule we set.
+    Locally stored data (scores, settings) stays on your device until you
+    uninstall the app or clear its storage. We rely on Google's
+    infrastructure security for any data those SDKs process — CarSprint
+    itself doesn't operate its own backend servers.</p>
+  </section>
+
+  <section id="changes">
+    <div class="section-head"><span class="badge">9</span><h2>Changes to this policy</h2></div>
+    <p>If this policy changes, we'll update the "Last updated" date at the
+    top of this page. Continued use of CarSprint after a change means you
+    accept the revised policy.</p>
+  </section>
+
+  <section id="contact">
+    <div class="section-head"><span class="badge">10</span><h2>Contact us</h2></div>
+    <p>Questions about this policy or your data? Reach us at
+    <a href="mailto:trisoftic@gmail.com">trisoftic@gmail.com</a>.</p>
+  </section>
+</main>
+
+<footer>
+  © 2026 Trisoftic. CarSprint is developed and published by Trisoftic.
+</footer>
+
+</body>
+</html>
